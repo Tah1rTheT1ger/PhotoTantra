@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "PhotoTantra",
+  "version": "1.0",
+  "description": "Demonstrates a privacy vulnerability in the CodeTantra attendance system.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage",
+    "downloads"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.codetantra.com/secure/tla/mi.jsp*"],
+      "js": ["injector.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["interceptor.js"],
+      "matches": ["https://*.codetantra.com/*"]
+    }
+  ]
+}

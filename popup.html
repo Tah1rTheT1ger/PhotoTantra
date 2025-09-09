@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PhotoTantra</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <!-- View 1: Initial Warning -->
+    <div id="warningView" class="view">
+        <h1 class="title">PhotoTantra</h1>
+        <p class="warning-text">
+            This tool's function is to prove a fundamental failure
+            in the privacy and security of the IIIT-Bangalore
+            attendance system. It demonstrates unauthorized
+            access to student biometric data (photographs)
+            collected without adequate protection.
+            <br><br>
+            Its existence is a direct appeal to the administration
+            to address this critical issue.
+            <br><br>
+            Any use of this tool or the data it exposes for
+            purposes other than this demonstration is an
+            ethical violation and is strictly prohibited. Handle
+            this information responsibly.
+        </p>
+        <button id="understandButton" class="action-button">I UNDERSTAND</button>
+    </div>
+
+    <!-- View 2: Invalid Page -->
+    <div id="invalidPageView" class="view" style="display: none;">
+        <h1 class="title">PhotoTantra</h1>
+        <p class="nav-text">
+            Navigate to a CodeTantra class summary page to use this extension.
+        </p>
+        <button id="refreshButton" class="action-button">REFRESH</button>
+    </div>
+
+    <!-- View 3: Main Application -->
+    <div id="mainView" class="view" style="display: none;">
+        <div class="header">
+            <button id="downloadImageBtn" class="header-btn" disabled>
+                <img src="download-icon.png" alt="Download Icon" class="icon">
+                Download this image
+            </button>
+            <button id="downloadZipBtn" class="header-btn" disabled>
+                <img src="zip-icon.png" alt="Zip Icon" class="icon">
+                Download zip for all images
+            </button>
+        </div>
+        <div class="image-frame-container">
+            <div id="imageFrame" class="image-frame">
+                <img id="studentImage" src="placeholder-icon.png" alt="Student photo">
+                <p id="statusText"></p>
+            </div>
+        </div>
+        <div class="search-container">
+            <p class="search-title">Search By</p>
+            <div class="radio-group">
+                <input type="radio" id="searchByName" name="searchType" value="name" checked>
+                <label for="searchByName">name</label>
+                <input type="radio" id="searchByRoll" name="searchType" value="roll">
+                <label for="searchByRoll">roll no.</label>
+            </div>
+            <div class="search-bar-wrapper">
+                <img src="search-icon.png" alt="Search" class="search-icon">
+                <input type="text" id="searchInput" placeholder="Search...">
+                <div id="autocompleteResults" class="autocomplete-results"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="jszip.min.js"></script>
+    <script src="popup.js"></script>
+</body>
+</html>
