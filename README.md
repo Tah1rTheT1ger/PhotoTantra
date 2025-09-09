@@ -2,7 +2,7 @@
 
 ### Installation Tutorial
 
-[![Watch the Video Tutorial](https://img.youtube.com/vi/YOUR_VIDEO_ID/maxresdefault.jpg)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID)
+[![Watch the Video Tutorial](PhotoTantra_Thumbnail.png)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID)
 
 **Click the thumbnail above to watch a step-by-step video tutorial on how to install and use PhotoTantra.**
 
