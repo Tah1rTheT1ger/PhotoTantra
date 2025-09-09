@@ -28,7 +28,7 @@ This extension must be installed manually using your browser's Developer Mode.
 
 **Step 1: Download the Extension**
 
-1.  Go to the [**Releases Page**](https://github.com/YOUR_USERNAME/PhotoTantra/releases) of this repository. (**Important:** Remember to replace `YOUR_USERNAME` in the link with your actual GitHub username).
+1.  Go to the [**Releases Page**](https://github.com/Tah1rTheT1ger/PhotoTantra/releases) of this repository.
 2.  Under the latest release (e.g., `v1.0`), click on `PhotoTantra.zip` to download the installation file.
 
 **Step 2: Unzip the File**
